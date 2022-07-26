@@ -1,5 +1,5 @@
 import Scrollspy from 'react-scrollspy';
-import logo from '../images/logo.png';
+import logo from '../../images/logo.png';
 
 const items = [
   { path: 'home', title: 'Home' },
