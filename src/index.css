@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Poppins:wght@200;300;400;500;600&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #8fe5ff;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000633;
+}
+
+.section-center {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 4rem 0;
+}
+
+.navigation .nav-img {
+  width: 200px;
+  height: 42px;
+}
+.navigation .navbar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.navigation .nav-items ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 15px;
+  color: #8fe5ff;
+  font-weight: 500;
+  padding-left: 0.75rem;
+}
+
+.navigation .nav-items ul li {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-items ul {
+    justify-content: flex-end;
+  }
+}
+.hero .section-center {
+  display: grid;
+}
+.hero .hero-title-desc h2 {
+  font-size: 50px;
+  color: #28ace2;
+  line-height: 1.4;
+}
+.hero .hero-title-desc h2 span {
+  display: block;
+  color: #def77d;
+}
+.hero .hero-title-desc p {
+  color: #2ebbe5;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 1rem;
+}
+.hero .hero-title-desc p span {
+  color: #def77d;
+}
+.hero .hero-btn {
+  display: grid;
+  gap: 0.75rem;
+}
+.hero .hero-btn .btn-support {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: 0;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.6rem 0.2rem;
+  font-weight: 700;
+  font-size: 26px;
+  background: linear-gradient(265.22deg, #def77d 0%, #d0f344 100%);
+  color: #00052f;
+  box-shadow: inset -8px -8px 16px #b6cc63,
+    inset 8px 8px 16px rgba(255, 255, 255, 0.5);
+}
+.hero .hero-btn .btn-mission {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: 0;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.6rem 0.2rem;
+  font-weight: 700;
+  font-size: 26px;
+  background: #1e1e1e;
+  color: #8fe5ff;
+}
+.hero .hero-img img {
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .hero .section-center {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1.5rem;
+  }
+  .hero .hero-img img {
+    width: 400px;
+    height: 400px;
+    float: right;
+  }
+  .hero .hero-btn {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 6rem;
+  }
+  .hero .hero-img img {
+    margin-top: 0;
+  }
+}
+.upper-img {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.2rem;
+}
+
+.upper-img .lines {
+  align-self: center;
+}
+
+.upper-img .lines img {
+  width: 60px;
+  height: 2px;
+}
+
+.upper-img .lines img:nth-child(2) {
+  margin: 2px 0;
+}
+
+.upper-img .plane {
+  width: 100px;
+  height: 70px;
+}
+
+.services {
+  background-color: #000633;
+}
+.services .services-body h3,
+.services .services-body h4 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+}
+.services .services-body h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-top: 1.4rem;
+}
+.services .services-body h4 {
+  font-size: 30px;
+}
+.services .services-body .cards {
+  margin-top: 3rem;
+  display: grid;
+  gap: 3rem;
+}
+.services .services-body .cards .card {
+  background-color: #fff;
+}
+.services .services-body .card,
+.services .services-body .card-img {
+  border-radius: 29px;
+}
+.services .services-body .card-info {
+  padding: 2rem 0;
+}
+.services .services-body .card-info h5 {
+  color: #2397cd;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.services .services-body .card-info p {
+  color: #000633;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2rem;
+  text-align: justify;
+}
+.services .services-body .card-info .service-btn-parent {
+  display: flex;
+  justify-content: center;
+}
+.services .services-body .card-info .service-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: 0;
+  color: #fff;
+  cursor: pointer;
+  background-color: #2397cd;
+  display: inline-block;
+  width: 40%;
+  border-radius: 25px;
+  padding: 0.6rem 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cards .card-img {
+    height: 200px;
+  }
+}
+.login {
+  display: grid;
+  height: 100vh;
+}
+.login .login-desc {
+  background-color: #000633;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.25rem;
+}
+.login .login-desc h4 {
+  color: #0096c7;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0.7rem;
+}
+.login .login-desc p {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.login .login-body {
+  display: grid;
+  place-items: center;
+}
+.login .login-body .login-form {
+  background-color: #fff;
+  width: 60%;
+  max-width: 478px;
+  padding: 3rem 2rem;
+}
+.login .login-body .login-form h4 {
+  color: #212121;
+  font-weight: 300;
+  font-size: 32px;
+  text-align: center;
+  padding: 0;
+}
+.login .login-body .login-form p {
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #928b8b;
+  text-align: center;
+  margin: 0.75rem 0;
+}
+.login .login-body .login-form input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  border: 1px solid #8c8383;
+}
+.login .login-body .login-form .btn-info {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: 0;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0096c7;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  display: block;
+}
+.login .login-body .login-form .btn-info :hover {
+  background-color: #066a8b;
+}
+
+@media screen and (min-width: 992px) {
+  .login {
+    grid-template-columns: 1fr 2fr;
+  }
+  .login .login-desc {
+    justify-content: flex-start;
+    padding: 5rem 0 0 0;
+  }
+  .login .login-desc p {
+    padding-top: 3rem;
+  }
+  .login .login-body {
+    background-color: #c0cdd3;
+  }
+}
+
+.is-current {
+  color: red;
+}
